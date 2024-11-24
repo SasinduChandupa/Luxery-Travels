@@ -1,0 +1,49 @@
+button {
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #dcdcdc;
+  transform: scale(1.2);
+}
+
+#wrapper {
+  position: relative;
+  background-image: url('/back.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow: auto;
+}
+
+#wrapper::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1; 
+}
+
+#wrapper > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  #wrapper {
+      background-size:cover;
+      background-position-x:80%;
+  }
+}

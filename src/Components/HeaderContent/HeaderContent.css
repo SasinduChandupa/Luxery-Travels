@@ -1,0 +1,21 @@
+#navcontent {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    gap: 20px;
+    background-color: #b3b8b8 !important;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #navcontent div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #navcontent img {
+    max-width: 40%;
+  }
+  
+  .logo {
+    width: 30px;
+  } 
